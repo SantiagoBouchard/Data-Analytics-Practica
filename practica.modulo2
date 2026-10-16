@@ -1,0 +1,13 @@
+CREATE Table Clientes(
+Id_Cliente INT,
+nombre varchar(100),
+perfil_bio TEXT, 
+fecha_registro date
+)
+
+Create Table productos(
+Id_Productos INT,
+descripcion varchar(255),
+precio decimal(10,2),
+esta_activo varchar(2)
+)
