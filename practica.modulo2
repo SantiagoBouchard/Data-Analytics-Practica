@@ -1,13 +1,13 @@
 CREATE Table Clientes(
-Id_Cliente INT, -- numero entero
-nombre varchar(100), --texto de maximo 100 caracteres
-perfil_bio TEXT, --texto largo
-fecha_registro date --fecha
+Id_Cliente INT, -- sirve para almacenar números enteros (sin decimales), usándose principalmente para crear identificadores únicos (IDs), contadores y relaciones entre tablas.
+nombre varchar(100), --sirve para almacenar una cadena de texto de longitud variable con un máximo de 100 caracteres.
+perfil_bio TEXT, --sirve para almacenar cadenas de texto de longitud grande o variable, ideal para párrafos largos, artículos o descripciones extensas.
+fecha_registro date --sirve para almacenar fechas en formato de año, mes y día (por lo general como YYYY-MM-DD)
 );
 
 Create Table productos(
-Id_Productos INT, --numero entero
-descripcion varchar(255), --texto de maximo 255 caracteres
+Id_Productos INT, --sirve para almacenar números enteros (sin decimales), usándose principalmente para crear identificadores únicos (IDs), contadores y relaciones entre tablas.
+descripcion varchar(255), --sirve para almacenar una cadena de texto de longitud variable con un máximo de 255 caracteres.
 precio decimal(10,2), --numero que admite decimales de maximo 10 digitos con 2 decimales
-esta_activo varchar(2) --numero de 2 caracteres
+esta_activo varchar(2) --sirve para almacenar una cadena de texto de longitud variable con un máximo de 2 caracteres.
 );
