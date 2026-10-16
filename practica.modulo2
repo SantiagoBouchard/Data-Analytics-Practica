@@ -9,5 +9,5 @@ Create Table productos(
 Id_Productos INT, --sirve para almacenar números enteros (sin decimales), usándose principalmente para crear identificadores únicos (IDs), contadores y relaciones entre tablas.
 descripcion varchar(255), --sirve para almacenar una cadena de texto de longitud variable con un máximo de 255 caracteres.
 precio decimal(10,2), --numero que admite decimales de maximo 10 digitos con 2 decimales
-esta_activo varchar(2) --sirve para almacenar una cadena de texto de longitud variable con un máximo de 2 caracteres.
+esta_activo BOOL --sirve para almacenar valores de verdadero o falso (TRUE o FALSE)
 );
