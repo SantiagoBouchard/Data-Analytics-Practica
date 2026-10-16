@@ -1,13 +1,13 @@
 CREATE Table Clientes(
-Id_Cliente INT,
-nombre varchar(100),
-perfil_bio TEXT, 
-fecha_registro date
+Id_Cliente INT, -- numero entero
+nombre varchar(100), --texto de maximo 100 caracteres
+perfil_bio TEXT, --texto largo
+fecha_registro date --fecha
 )
 
 Create Table productos(
-Id_Productos INT,
-descripcion varchar(255),
-precio decimal(10,2),
-esta_activo varchar(2)
+Id_Productos INT, --numero entero
+descripcion varchar(255), --texto de maximo 255 caracteres
+precio decimal(10,2), --numero que admite decimales de maximo 10 digitos con 2 decimales
+esta_activo varchar(2) --numero de 2 caracteres
 )
