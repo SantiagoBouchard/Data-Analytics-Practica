@@ -3,11 +3,14 @@ GO
 USE ventas_tech_db;
 GO
 
+--Seccion 1: DROP
+	
 DROP TABLE IF EXISTS ventas;
 DROP TABLE IF EXISTS productos;
 DROP TABLE IF EXISTS clientes;
 DROP TABLE IF EXISTS categorias;
 
+--SECCION 2 CREAR TABLAS
 
 CREATE TABLE categorias (
 id_categoria INT PRIMARY KEY,
@@ -44,6 +47,8 @@ CREATE TABLE ventas (
 	FOREIGN KEY (id_producto) REFERENCES productos(id_producto)
 );
 
+--SECCION 3 INSERT
+
 INSERT INTO categorias (id_categoria, nombre_categoria, descripcion) VALUES
   (1,'Computación','Laptops, PCs y monitores'),
   (2,'Accesorios','Periféricos y complementos'),
@@ -76,6 +81,8 @@ INSERT INTO categorias (id_categoria, nombre_categoria, descripcion) VALUES
   ( 8,3,2,8,28.00,'2024-03-13'),
   ( 9,4,4,1,120.00,'2024-03-14'),
   (10,5,3,2,450.00,'2024-03-15');
+
+--SECCION 4 VALIDACION
   
 SELECT * FROM categorias;   -- esperado: 4 filas
 SELECT * FROM clientes;     -- esperado: 5 filas
